@@ -1,0 +1,134 @@
+.pseudo-slider img {
+    width: auto;
+    max-width: 100%;
+}
+.img-slider {
+    max-height: 540px;
+    overflow: hidden;
+}
+
+.publick-documents .content-header__caption {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    width: 480px;
+    background: rgba(0,130,56,0.7);
+    border: 1px solid rgba(0,155,67,0.7);
+    top: auto;
+}
+
+.publick-documents .content-header__caption h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+}
+
+
+@media(max-width:768px) {
+    .publick-documents .content-header__caption {
+        top: 5%;
+        width: 320px;
+        left: 7%;
+        bottom: auto;
+        padding: .6rem;
+    }
+}
+
+@media(max-width:768px) {
+    .publick-documents .content-header__caption h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: 1.5px;
+        padding: -20px;
+        margin-bottom: 0;
+    }
+}
+
+/* Accordion */
+
+.accordion .card {
+    border: none;
+    border-radius: 0;
+}
+
+.accordion .card-body {
+    padding: 1.5625rem;
+}
+
+.accordion .card-header:hover {
+    background-color: #dadada;
+    cursor: pointer;
+}
+
+.accordion .card-header:hover h5 span {
+    color: #008238;
+}
+
+.accordion .card-header h5 span {
+    font-weight: bold;
+}
+
+.accordion .card-header h5 button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 34px;
+}
+
+.accordion .card-header h5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.accordion .card-header {
+    background: #e7e7e7;
+    border: none;
+    border-radius: 0;
+}
+
+button.btn.btn-link[aria-expanded="false"] i.fas.fa-plus-square {
+    display: block;
+    font-size: 1.25rem;
+}
+button.btn.btn-link[aria-expanded="false"] i.fas.fa-plus-square:hover {
+    text-decoration: none;
+}
+
+button.btn.btn-link[aria-expanded="true"] i.fas.fa-plus-square {
+    display: none;
+}
+
+button.btn.btn-link[aria-expanded="false"] i.fas.fa-minus-square:hover {
+    text-decoration: none;
+}
+button.btn.btn-link[aria-expanded="false"] i.fas.fa-minus-square {
+    display: none;
+}
+button.btn.btn-link[aria-expanded="true"] i.fas.fa-minus-square {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    text-decoration: none;
+    color: #008238;
+}
+
+.btn-link {
+    color: inherit;
+}
+
+
