@@ -24,6 +24,19 @@ body {
     scroll-behavior: smooth;
 }
 
+.bold {
+    font-weight: 600;
+}
+
+a {
+    color: #008238;
+    text-decoration: none;
+    line-height: inherit;
+}
+
+a:hover, a:focus {
+    color: #00692d;
+}
 
 .visible {
    visibility: visible;
@@ -162,6 +175,15 @@ strong {
     }      
 }
 
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: column!important;
+        -webkit-box-orient: vertical!important;
+        -webkit-box-direction: normal!important;
+                flex-direction: column!important;
+    }
+}
+
 
 .header-menu {
     -webkit-transition: all .3s linear;
@@ -217,7 +239,6 @@ button.form-submit:focus {
 
 .main {
     position: relative;
-    color: white;
     background-color: #f2f2f2;
     z-index: 1;
     width: 100%;
@@ -244,7 +265,7 @@ button.form-submit:focus {
             transform: rotate(0.01deg);
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 993px) {
     .logo-container {
         position: relative;
         float: left;
@@ -254,7 +275,7 @@ button.form-submit:focus {
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 993px) {
     .logo-container .logo-background {
         position: absolute;
         height: 70px;
@@ -270,7 +291,7 @@ button.form-submit:focus {
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 993px) {
     .main .logo-background {
         -webkit-transition: top 200ms ease-out;
         -o-transition: top 200ms ease-out;
@@ -288,7 +309,14 @@ button.form-submit:focus {
     }
 }
 
- @media (max-width: 991.98px) {
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block!important;
+    }
+}
+
+
+ @media (max-width: 992px) {
     .offcanvas-collapse {
         position: fixed;
         top: 0;
@@ -1107,7 +1135,7 @@ a.bx-prev:before {
 
 /* adaptive */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .content-container {
         display: none;
     }
@@ -1128,6 +1156,13 @@ a.bx-prev:before {
     }
     div#navbarSupportedContent{
         z-index: 1;
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .footer ul.first-block {
         -webkit-box-orient: vertical;
@@ -1141,7 +1176,101 @@ a.bx-prev:before {
     .slider-wrapper .bx-wrapper .bx-pager.bx-default-pager a {
         width: 50px;
     }
+    div#section_container {
+        margin: inherit;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slider-wrapper .bx-wrapper .bx-pager, .slider-wrapper .bx-wrapper .bx-controls-auto {
+        bottom: -50px;
+    }
+    .content-header__caption {
+        top: 12.5%;
+        max-width: 305px;
+        padding: 1rem;
+    }
+
+    .content-header__caption h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .content-header__caption h4 {
+        font-size: 20px;
+        line-height: 16px;
+    }
+    .hide-for-small {
+        display: none;
+    }
+}
+
+/* META */
+
+.section-meta {
+    margin-bottom: 1.5625rem;
+}
+
+.breadcrumbs {
+    margin-bottom: 0;
+    padding: 0.15625rem 0;
+}
+
+.breadcrumbs > * {
+    margin: 0;
+    float: left;
+    font-size: 0.875rem;
+    text-transform: none;
+}
+
+.breadcrumbs > * a, .breadcrumbs > * span {
+    text-transform: none;
+    color: #008238;
+}
+
+.breadcrumbs > *:before {
+    content: "/";
+    color: #aaaaaa;
+    margin: 0 0.3125rem;
+    position: relative;
+    top: 1px;
+}
+
+.breadcrumbs > *:first-child:before {
+    content: " ";
+    margin: 0;
+}
+
+.breadcrumbs a:hover {
+    cursor: pointer;
+}
+
+.breadcrumbs {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 0;
+    list-style: none;
+    border-style: solid;
+    border-width: 0;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0;
 }
 
 
+.breadcrumbs > * a, .breadcrumbs > * span {
+    text-transform: none;
+    color: #008238;
+}
 
+.breadcrumbs > * span {
+    color: #7b7b7b;
+}
+
+hr {
+    border: solid #d7d7d7;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 1.25rem 0 1.1875rem;
+    height: 0;
+}
