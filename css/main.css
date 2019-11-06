@@ -447,6 +447,17 @@ button.form-submit:focus {
     height: 100%;
 }
 
+.cement-link:hover .link-menu {   
+    display: -webkit-box;   
+    display: -ms-flexbox;   
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    min-height: 397px;
+    background: #fff;
+    height: 100%;
+}
+
 .descktop-menu {
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
@@ -739,7 +750,7 @@ a.bx-prev:before {
 .link-menu {
     margin-left: -35.625rem;
     width: 71.25rem;
-    top: 100%;
+    top: 98%;
     left: 50% !important;
     border: 4px solid #004f22;
     font-family: inherit;
@@ -768,11 +779,11 @@ a.bx-prev:before {
     padding: 0.9375rem;
 }
 
-.company-link .third-block {
+.third-block {
     padding-right: 4px;
 }
 
-.company-link .first-block {
+.first-block {
     padding-top: 9.5px;
 }
 
@@ -780,11 +791,11 @@ a.bx-prev:before {
     letter-spacing: 1px;
 }
 
-.company-link .box {
+.box {
     height: 100%;
 }
 
-.company-link .first-block .box {
+.first-block .box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -794,71 +805,71 @@ a.bx-prev:before {
             flex-direction: column;
 }
 
-.company-link .first-block a {
+.first-block a {
     text-transform: uppercase;
     color: #7b7b7b;
     padding: 0.5125rem 0.9375rem;
 }
 
-.company-link .first-block a:hover {
+.first-block a:hover {
     text-transform: uppercase;
     color: #008238;
 }
 
-.company-link .first-block .box span {
+.first-block .box span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
 }
 
-.company-link .first-block .box>span:hover a {
+.first-block .box>span:hover a {
     background-color: #e7e7e7;
 }
 
-.company-link .first-block .box>span a {
+.first-block .box>span a {
     width: 100%;
 }
 
-.company-link .second-block {
+.second-block {
     background-color: #e7e7e7;
 }
 
-.company-link .second-block h4 {
+.second-block h4 {
     font-family: itc-avant-garde-gothic-pro, sans-serif;
     text-transform: capitalize;
     border-bottom: 1px solid #d7d7d7;
     padding-bottom: 8px;
 }
 
-.company-link .second-block table {
+.second-block table {
     border:none;
     width: 100%;
     font-family: itc-avant-garde-gothic-pro, sans-serif;
 }
 
-.company-link .second-block table tr {
+.second-block table tr {
     border-bottom: 1px solid #d7d7d7;
 }
 
-.company-link .second-block table td {
+.second-block table td {
     border-color: #e7e7e7;
 }
 
-.company-link .second-block table h3 {
+.second-block table h3 {
     margin: 0;
     padding: 5px;
     font-weight: 600;
     font-size: 28px;
 }
 
-.company-link .second-block table h5 {
+.second-block table h5 {
     margin: 0;
     font-size: 1.1875rem;
     text-transform: lowercase;
 }
 
-.company-link .second-block h5 a {
+.second-block h5 a {
     margin: 0;
     color:#008238;
     font-size: 1.1875rem;
@@ -866,25 +877,59 @@ a.bx-prev:before {
     padding-top: 30px;
 }
 
-.company-link .second-block .field h5.link {
+.second-block .field h5.link,
+.second-block .field a {
     padding-top: 30px;
     font-weight: bold;
 }
 
-.company-link .third-block h4 {
+.third-block h4 {
     font-size: 1.3125rem;
     font-family: itc-avant-garde-gothic-pro, sans-serif;
     text-transform: initial;
     padding-bottom: 8px;
 }
 
-.company-link .third-block .field-wrapper img {
+.third-block .field-wrapper img {
     max-width: 100%;
 }
 
+.cement-link .second-block h4 {
+    font-size: 21px;
+}
+
+.cement-link .field a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: initial;
+    font-size: 19px;
+}
+
+.target-a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: initial;
+    font-size: 19px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+/* Меню Цемент 1й уровень */
+/* .second-block.products,
+.third-block.products {
+    display: none;
+} */
+
+/* li.nav-item.cement-link .first-block {
+    max-width: 100%;
+    width: 100%;
+} */
+
 /* main-info */
 .row-section-content {
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -991,6 +1036,77 @@ a.bx-prev:before {
     color: #008238;
     padding-top: 0.725rem;
     padding-bottom: 0.7875rem;
+}
+
+/* Social */
+
+.social-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    /* height: 22px;
+    width: 24px;
+    padding: 0 0.125rem; */
+}
+
+.share-button label span {
+    /* display: none; */
+}
+
+.share-button label.entypo-share {
+    background-color: transparent;
+    position: absolute;
+    font-size: 18px;
+    padding: 0;
+    color: #7b7b7b;
+}
+.share-button label.entypo-share:hover {
+    color: #008238;
+}
+
+.social-container .share-button .social.active {
+    margin-left: 0px;
+    margin-bottom: -70px;
+}
+
+.social-container .share-button {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.page-meta i.fas {
+    font-size: 18px;
+    padding: 4px;
+    color: #7b7b7b;
+}
+
+.page-meta i.fas:hover {
+    color: #008238;
+    cursor: pointer;
+}
+
+.page-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 14px;
+    padding-top: 20px;
 }
 
 /* Footer */
@@ -1274,3 +1390,26 @@ hr {
     margin: 1.25rem 0 1.1875rem;
     height: 0;
 }
+
+/* share-button */
+
+.share-button {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.fork img {
+    opacity: .6;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.fork img:hover {
+    opacity: 1;
+}
+
