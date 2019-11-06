@@ -59,3 +59,15 @@ $(function () {
 
     })
 })
+
+// button-share
+$(function () {
+    $('.share-button').share({
+        title: 'Поделиться',
+        image: '',
+        app_id: '959595959',
+        background: 'rgba(255,255,255,.5)',
+        color: '#3B2B45',
+        button_text: ''
+    })
+});

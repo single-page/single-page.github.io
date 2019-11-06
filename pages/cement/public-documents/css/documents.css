@@ -44,6 +44,16 @@
         padding: -20px;
         margin-bottom: 0;
     }
+
+}
+
+@media(max-width:992px) {
+    .footer-documents {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
 }
 
 /* Accordion */
@@ -55,6 +65,7 @@
 
 .accordion .card-body {
     padding: 1.5625rem;
+    background-color: #f2f2f2;
 }
 
 .accordion .card-header:hover {
@@ -73,7 +84,6 @@
 .accordion .card-header h5 button {
     position: absolute;
     width: 100%;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,6 +106,10 @@
     background: #e7e7e7;
     border: none;
     border-radius: 0;
+}
+
+span.file.file--document a{
+    font-size: 16px;
 }
 
 button.btn.btn-link[aria-expanded="false"] i.fas.fa-plus-square {
@@ -131,4 +145,18 @@ button.btn.btn-link[aria-expanded="true"] i.fas.fa-minus-square {
     color: inherit;
 }
 
+h4 .field, .field-wrapper h5 {
+    font-size: 21px;
+    color: #7b7b7b;
+    font-weight: bold;
+    padding-top: 30px;
+    letter-spacing: 1px;
+}
 
+.content {
+    line-height: 2rem;
+}
+
+ul {
+    list-style: none;
+}
