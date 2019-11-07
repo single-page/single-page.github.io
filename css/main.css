@@ -170,7 +170,7 @@ strong {
 
 @media(max-width: 1199px) {
     .section-header.fixed .link-menu {
-        margin-left: -20rem;
+        margin-left: -19.5rem;
         top: calc(100% - 1px);
     }      
 }
@@ -183,6 +183,7 @@ strong {
                 flex-direction: column!important;
     }
 }
+
 
 
 .header-menu {
@@ -446,7 +447,7 @@ button.form-submit:focus {
     background: #fff;
     height: 100%;
 }
-
+/* :hover */
 .cement-link:hover .link-menu {   
     display: -webkit-box;   
     display: -ms-flexbox;   
@@ -456,6 +457,12 @@ button.form-submit:focus {
     min-height: 397px;
     background: #fff;
     height: 100%;
+}
+
+.cement-link:hover .productions {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
 }
 
 .descktop-menu {
@@ -472,14 +479,255 @@ button.form-submit:focus {
     padding: 0.625rem 0.5rem 0.3125rem;
 }
 
-.descktop-menu ul li:hover {
+.descktop-menu>ul>li:hover {
     background-color: #004f22;  
+}
+
+.link-menu .sm-blue {
+    border-radius: 0px!important;
+}
+
+ul.main-menu {
+    width: 33.3333%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff!important;
+}
+
+ul.main-menu a {
+    background: #fff;
+    font-family: inherit;
+    font-size: inherit;
+    color: #7b7b7b;
+    text-transform: uppercase;
+    padding: 0.5125rem 0.9375rem;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: none;
+    line-height: 1;
+}
+
+ul.main-menu a:hover {
+    font-family: inherit;
+    line-height: 1;
+    color: inherit;
+    text-shadow: none;
+    color: #00692d!important;
+    background-color: #e7e7e7;
+    border-radius: 0!important;
+}
+
+li.reset-padding a:hover {
+    border-radius: 0!important;
+}
+
+.sm-blue.sm-vertical > li:last-child > a, .sm-blue.sm-vertical > li:last-child > :not(ul) a {
+    border-radius: 0px!important;
+}
+
+.first-block>li {
+    padding-top: 9.5px!important;
+}
+
+li.reset-padding {
+    padding: 0px!important;
+}
+
+/* МЕНЮ ЦЕМЕНТ */
+ul.sub-wrapper.productions {
+    width: 755px;
+    left: 100%;
+    top: 0px;
+    height: 389px;
+    border-radius: 0px!important;
+    padding: 0;
+}
+
+ul.sub-wrapper.sale {
+    min-width: 755px!important;
+    left: 100%!important;
+    top: -24px!important;
+    height: 388px;
+    border-radius: 0px!important;
+    margin-left: 0px!important;
+    margin-top: -15px!important;
+}
+
+span.second-block.products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 50%;
+    width: 50%;
+}
+
+.fz-19 {
+    font-size: 19px!important;
+}
+
+.dark-grey {
+    background-color: #e7e7e7!important;
 }
 
 .descktop-menu > ul > li > a{
     color: #fff;
     letter-spacing: -.15px;
 }
+
+span.third-block.products {
+    width: 50%;
+    max-width: 50%;
+}
+
+.plants .first-block {
+        width: 50%;
+    max-width: 50%;
+} 
+
+.has-arrow .sub-arrow {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
+
+ul.sub-wrapper.plants {
+    min-width: 755px!important;
+    /* display: flex!important; */
+    left: 100%!important;
+    top: -54px!important;
+    height: 388px;
+    border-radius: 0px!important;
+    margin-left: 0px!important;
+    margin-top: -15px!important;
+}
+
+.kry-amv-link,
+.kry-plant-link,
+.kam-plant-link {
+    width: 50%;
+    max-width: 50%;
+    float: left;
+}
+
+.kam-plant,.amv-plant {
+    padding: 0!important;
+}
+
+.kry-plant,
+.amv-plant,
+.kam-plant {
+   padding-bottom: 0!important;
+   padding-left: 0!important;
+   padding-right: 0!important;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+
+.amv-plant a,
+.kry-plant a,
+.kam-plant a {
+    width: 50%;
+    max-width: 50%;
+}
+
+.amv-plant-info a,
+.kry-plant-info a,
+.kam-plant-info a {
+    width: 100%;
+    max-width: 100%;
+}
+
+.kry-plant-info-wrapper.d-block,
+.amv-plant-info-wrapper,
+.kam-plant-info-wrapper {
+    margin-left: 50%!important;
+    z-index: 1;
+    top: -1px!important;
+    width: 50%!important;
+    max-width: 50!important;
+    height: 388px;
+}
+
+.amv-plant-info-wrapper {
+    top: -21px!important;
+    margin-top: -20px!important;
+    max-width: 50%!important;
+}
+.kam-plant-info-wrapper {
+    top: -50px!important;
+    max-width: 50%!important;
+    margin-top: -20px!important;
+
+}
+
+.amv-plant-info span.second-block.products,
+.kry-plant-info span.second-block.products,
+.kam-plant-info span.second-block.products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.amv-plant-info,
+.kry-plant-info,
+.kam-plant-info {
+    padding: 0!important;
+    height: 100%;
+}
+
+ul.sub-wrapper.karier {
+    width: 755px!important;
+    min-width: 755px!important;
+    left: 100%!important;
+    top: -79px!important;
+    margin-top: -20px!important;
+    margin-left: 0!important;
+    height: 388px;
+    border-radius: 0px!important;
+    padding: 0;
+    max-width: 100%!important;
+}
+ul.sub-wrapper.investor {
+    width: 755px!important;
+    min-width: 755px!important;
+    left: 100%!important;
+    top: -109px!important;
+    margin-top: -20px!important;
+    margin-left: 0!important;
+    height: 388px;
+    border-radius: 0px!important;
+    padding: 0;
+    max-width: 100%!important;
+}
+
+ul.sub-wrapper.karier span.second-block.karier {
+    max-width: 50%!important;
+    width: 50%!important;
+}
+ul.sub-wrapper.investor span.second-block.investor {
+    max-width: 50%!important;
+    width: 50%!important;
+}
+
+ul.sub-wrapper.karier span.second-block.products,
+ul.sub-wrapper.karier span.third-block.products{
+    max-width: 100%!important;
+    width: 100%!important;
+}
+
+.section-header.fixed ul.sub-wrapper.plants {
+    top: -53px!important;
+}
+
+
 
 @media screen and (min-width: 1220px) {
     .descktop-menu ul li {
@@ -765,11 +1013,25 @@ a.bx-prev:before {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
     .section-header .link-menu {
-        margin-left: -41.625rem;
-        width: -40.625rem;
-        width: 63rem;
+        margin-left: -41rem;
+        width: 62rem;
+    }
+    li ul.sub-wrapper[role='group'] {
+        width: 725px!important;
+        min-width: 725px!important;
+    }
+    ul.main-menu {
+    width: 26.3333%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff!important;
+    }
+    .field-wrapper img {
+    max-width: 334px!important;
     }
 }
 
@@ -838,7 +1100,7 @@ a.bx-prev:before {
 .second-block h4 {
     font-family: itc-avant-garde-gothic-pro, sans-serif;
     text-transform: capitalize;
-    border-bottom: 1px solid #d7d7d7;
+    /* border-bottom: 1px solid #d7d7d7; */
     padding-bottom: 8px;
 }
 
@@ -879,7 +1141,7 @@ a.bx-prev:before {
 
 .second-block .field h5.link,
 .second-block .field a {
-    padding-top: 30px;
+    padding-top: 20px;
     font-weight: bold;
 }
 
@@ -912,20 +1174,13 @@ a.bx-prev:before {
     display: flex;
     text-transform: initial;
     font-size: 19px;
-    padding-top: 30px;
-    font-weight: bold;
+    padding-top: 20px!important;
+    font-weight: bold!important;
+    color: #00692d!important;
 }
-
-/* Меню Цемент 1й уровень */
-/* .second-block.products,
-.third-block.products {
-    display: none;
-} */
-
-/* li.nav-item.cement-link .first-block {
-    max-width: 100%;
-    width: 100%;
-} */
+.target-a:hover {
+    background-color: transparent!important;
+}
 
 /* main-info */
 .row-section-content {
@@ -1413,3 +1668,22 @@ hr {
     opacity: 1;
 }
 
+@media (max-width: 992px) {
+    .page-meta {
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .content-header__caption {
+        top: 1.5%;
+        max-width: 280px;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .slider-wrapper .bx-wrapper .bx-pager, .slider-wrapper .bx-wrapper .bx-controls-auto {
+        bottom: -30px;
+    }
+}
