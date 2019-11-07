@@ -33,6 +33,11 @@ function myFunction() {
     }
 }
 
+$('#plants').hover(
+       function(){ $('.kry-plant-info-wrapper').addClass('d-block') },
+       function(){ $('.kry-plant-info-wrapper').removeClass('d-block') }
+)
+
 // Стрелка наверх
 var button_to_top = document.getElementById("top_btn");
 
@@ -71,3 +76,4 @@ $(function () {
         button_text: ''
     })
 });
+
