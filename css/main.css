@@ -457,6 +457,7 @@ button.form-submit:focus {
     min-height: 397px;
     background: #fff;
     height: 100%;
+    overflow: hidden;
 }
 
 .cement-link:hover .productions {
