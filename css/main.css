@@ -1042,6 +1042,17 @@ a.bx-prev:before {
     padding: 0.9375rem;
 }
 
+@media(max-width: 1024px) {
+    .first-block {
+        max-width: 26.3333%;
+    }
+    .second-block, .third-block {
+    max-width: 37.3333%;
+    width: 37.3333%;
+    padding: 0.9375rem;
+}
+}
+
 .third-block {
     padding-right: 4px;
 }
